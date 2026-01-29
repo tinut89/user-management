@@ -1,1 +1,7 @@
-
+---
+- name: Hello World Windows Playbook
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Echo Hello World
+      raw: Write-Host "Hello, Windows World!"
