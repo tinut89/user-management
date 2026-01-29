@@ -1,6 +1,7 @@
 ---
 - name: Hello World Playbook Example
   hosts: all
+  gather_facts: false
   tasks:
     - name: Print "Hello, world!" message
       ansible.builtin.debug:
