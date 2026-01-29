@@ -1,7 +1,6 @@
 ---
 - name: Hello World Playbook Example
-  hosts: localhost
-  connection: local
+  hosts: all
   tasks:
     - name: Print "Hello, world!" message
       ansible.builtin.debug:
